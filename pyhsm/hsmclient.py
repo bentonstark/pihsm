@@ -166,7 +166,7 @@ class HsmClient:
         self.__libhsm.close_all_sessions.argtypes = [c_char_p, c_ulong, c_ulong]
         self.__libhsm.login.argtypes = [c_char_p, c_ulong, c_ulong, c_ulong, c_char_p, c_ulong]
         self.__libhsm.logout.argtypes = [c_char_p, c_ulong, c_ulong]
-        self.__libhsm.set_pin.argtypes = [c_char_p, c_ulong, c_char_p, c_ulong, c_char_p, c_ulong]
+        self.__libhsm.set_pin.argtypes = [c_char_p, c_ulong, c_ulong, c_char_p, c_ulong, c_char_p, c_ulong]
         self.__libhsm.find_objects.argtypes = [c_char_p, c_ulong, c_ulong, POINTER(c_ulong)]
         self.__libhsm.get_object_handle.argtypes = [c_char_p, c_ulong, c_ulong, c_char_p, c_ulong, POINTER(c_ulong)]
         self.__libhsm.sign.argtypes = [c_char_p, c_ulong, c_ulong, c_char_p, c_ulong, c_ulong, c_ulong, c_ulong,
